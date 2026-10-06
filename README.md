@@ -17,3 +17,12 @@
 - `DB Urbanist X Li.woff2`
 
 CSS เตรียม @font-face ไว้ให้แล้ว เมื่อใส่ไฟล์ครบเว็บจะใช้ฟอนต์ดังกล่าวทันที
+
+## V2.1 typography fix
+- DB Urbanist X is now mapped to discrete weights 200–900 for more reliable mobile rendering.
+- Font URLs use URL-encoded spaces for GitHub Pages/mobile browser consistency.
+- Negative heading tracking was removed and Thai text spacing/line-height increased for readability.
+- Keep the three original font files in `assets/fonts/` with these exact names:
+  - `DB Urbanist X.woff2`
+  - `DB Urbanist X Bd.woff2`
+  - `DB Urbanist X Li.woff2`
