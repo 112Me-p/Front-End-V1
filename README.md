@@ -1,13 +1,19 @@
-# กลับบ้านข้าวมันไก่ — Front End V1
+# กลับบ้านข้าวมันไก่ — Front End V2
 
-Static front end สำหรับ GitHub Pages: interactive menu, size options, cart, quick order presets, sauce interaction, gallery, responsive mobile, LocalStorage cart, order summary, LINE share text, PWA cache.
+อัปไฟล์ทั้งหมดในโฟลเดอร์นี้ทับ V1 ใน repository เดิมได้เลย แล้ว Commit / Push ตามปกติ
 
-## เมนูในระบบ
-- ข้าวมันไก่ต้ม: ธรรมดา 50 / พิเศษ 60
-- ข้าวไก่ทอด: ธรรมดา 50 / พิเศษ 60
-- ข้าวมันเครื่องใน: ธรรมดา 50 / พิเศษ 60
-- ไก่สิงคโปร์ตอน: S 80 / M 100 / L 120
-- ไก่ทอดตอน: S 70 / M 90 / L 110
+## สิ่งที่เปลี่ยนใน V2
+- OUR MENU ใหม่: ราคาใหญ่ขึ้น, เลือกธรรมดา/พิเศษหรือ S/M/L ก่อนเพิ่มตะกร้า, เพิ่มข้าวมัน 15 บาท/ถ้วย
+- Cart เพิ่ม/ลด/ลบรายการและคำนวณยอด realtime
+- ภาพใหม่ 18 ภาพ ครอบคลุม Hero, Menu, Signature, Scrollytelling และ Gallery
+- Scrollytelling 6 ฉากหลังช่วงเมนู
+- Graphic system แดง/เขียว: วงกลม, ข้าวหลามตัด, กรอบเส้นคู่, ป้ายวินเทจ
+- รองรับ desktop/mobile และ Sticky Cart บนมือถือ
 
-## หมายเหตุ
-รูปภาพปัจจุบันใช้ asset จาก visual concept ที่ให้มาเพื่อทำ prototype. โครงหน้าเมนูพร้อมสลับเป็นภาพถ่ายจริงแต่ละเมนูภายหลังโดยไม่ต้องรื้อ UX.
+## ฟอนต์ DB Urbanist X
+เพื่อความปลอดภัย ไฟล์ ZIP นี้ไม่ได้แนบไฟล์ฟอนต์ที่คุณอัปโหลดมาให้ กรุณานำไฟล์ต้นฉบับ 3 ไฟล์ของคุณวางไว้ที่ `assets/fonts/` ด้วยชื่อเดิม:
+- `DB Urbanist X.woff2`
+- `DB Urbanist X Bd.woff2`
+- `DB Urbanist X Li.woff2`
+
+CSS เตรียม @font-face ไว้ให้แล้ว เมื่อใส่ไฟล์ครบเว็บจะใช้ฟอนต์ดังกล่าวทันที
