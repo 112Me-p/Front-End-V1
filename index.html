@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#183f2d" />
+  <meta name="description" content="กลับบ้านข้าวมันไก่ — ข้าวมันไก่สูตรน้ำราดสิงคโปร์ กินดี เหมือนกลับบ้าน" />
+  <title>กลับบ้านข้าวมันไก่ — Singapore Chicken Rice</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="paper-noise" aria-hidden="true"></div>
+  <header class="topbar">
+    <button class="brand" data-scroll="#home" aria-label="กลับหน้าแรก">
+      <span class="brand-rooster">雞</span>
+      <span class="brand-type"><strong>กลับบ้าน</strong><small>SINGAPORE CHICKEN RICE</small></span>
+    </button>
+    <nav class="nav">
+      <button data-scroll="#menu">เมนู</button>
+      <button data-scroll="#sauce">น้ำราด</button>
+      <button data-scroll="#story">เรื่องของเรา</button>
+      <button data-scroll="#visit">มาที่ร้าน</button>
+    </nav>
+    <div class="top-actions">
+      <button class="ghost-btn" id="quickOrderTop">สั่งแบบเร็ว</button>
+      <button class="cart-btn" id="openCartTop">ตะกร้า <span id="cartCountTop">0</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <img src="assets/storefront.png" alt="หน้าร้านกลับบ้านข้าวมันไก่" class="hero-photo" />
+      <div class="hero-vignette"></div>
+      <div class="hero-grid"></div>
+      <div class="hero-copy">
+        <div class="hero-kicker"><span>海南雞飯</span> สูตรน้ำราดสิงคโปร์</div>
+        <h1>กลับบ้าน<br><em>ข้าวมันไก่</em></h1>
+        <p>หอมข้าว นุ่มไก่ น้ำราดเด็ด — มื้อธรรมดาที่ตั้งใจทำให้รู้สึกเหมือนได้กลับมากินข้าวที่บ้าน</p>
+        <div class="hero-actions">
+          <button class="primary-cta" data-scroll="#menu">ดูเมนูและสั่งเลย <span>→</span></button>
+          <button class="secondary-cta" data-scroll="#story">รู้จัก “กลับบ้าน”</button>
+        </div>
+        <div class="hero-chips">
+          <span>เริ่มต้น ฿50</span><span>น้ำราดสิงคโปร์</span><span>เลือกไซส์ได้</span>
+        </div>
+      </div>
+      <div class="hero-sign">
+        <span>กินดี</span><strong>เหมือนกลับบ้าน</strong><small>เปิดทุกวัน · เมนูน้อย ทำสด</small>
+      </div>
+      <button class="scroll-cue" data-scroll="#best">เลื่อนดู ↓</button>
+    </section>
+
+    <section class="best section" id="best">
+      <div class="section-head light-head">
+        <div><span class="eyebrow">POPULAR AT HOME</span><h2>วันนี้กินอะไรดี?</h2><p>กดเลือกแบบเร็ว แล้วปรับจำนวนต่อในตะกร้าได้ทันที</p></div>
+        <button class="text-btn" data-scroll="#menu">ดูเมนูทั้งหมด →</button>
+      </div>
+      <div class="quick-grid" id="quickGrid">
+        <button class="quick-card" data-preset="solo"><span>01</span><strong>กินคนเดียว</strong><small>ข้าวมันไก่ต้ม ธรรมดา</small><b>฿50</b></button>
+        <button class="quick-card red" data-preset="hungry"><span>02</span><strong>หิวมาก</strong><small>ข้าวมันไก่ต้ม พิเศษ</small><b>฿60</b></button>
+        <button class="quick-card cream" data-preset="two"><span>03</span><strong>กิน 2 คน</strong><small>ไก่สิงคโปร์ตอน M + ข้าวมัน</small><b>เริ่ม ฿100</b></button>
+        <button class="quick-card photo" data-preset="fried"><span>04</span><strong>สายทอด</strong><small>ข้าวไก่ทอด พิเศษ</small><b>฿60</b></button>
+      </div>
+    </section>
+
+    <section class="menu section" id="menu">
+      <div class="section-head dark-head">
+        <div><span class="eyebrow">OUR MENU</span><h2>เมนูน้อย เลือกง่าย</h2><p>กดเลือกขนาดหรือระดับธรรมดา/พิเศษ แล้วเพิ่มลงตะกร้าได้เลย</p></div>
+        <div class="menu-filter" role="group" aria-label="กรองเมนู">
+          <button class="is-active" data-filter="all">ทั้งหมด</button>
+          <button data-filter="rice">ข้าว</button>
+          <button data-filter="chicken">ไก่เป็นจาน</button>
+        </div>
+      </div>
+      <div class="menu-layout">
+        <aside class="menu-visual" id="menuVisual">
+          <img src="assets/signature-dish.jpg" alt="ข้าวมันไก่กลับบ้าน" />
+          <div class="menu-visual-copy"><span id="visualKicker">SIGNATURE</span><strong id="visualName">ข้าวมันไก่ต้ม</strong><small id="visualDesc">ไก่นุ่ม ข้าวมันหอม เสิร์ฟพร้อมน้ำราดสิงคโปร์</small></div>
+          <div class="visual-price"><span>เริ่ม</span><strong id="visualPrice">฿50</strong></div>
+        </aside>
+        <div class="menu-list" id="menuList"></div>
+      </div>
+    </section>
+
+    <section class="sauce" id="sauce">
+      <div class="sauce-media">
+        <img src="assets/signature-dish.jpg" alt="น้ำราดสิงคโปร์บนข้าวมันไก่" />
+        <div class="sauce-tint" id="sauceTint"></div>
+        <div class="sauce-badge">SIGNATURE<br>SAUCE</div>
+      </div>
+      <div class="sauce-copy">
+        <span class="eyebrow">THE SIGNATURE</span>
+        <h2>น้ำราดที่ทำให้<br>จานนี้เป็น “กลับบ้าน”</h2>
+        <p>หัวใจของร้านคือสูตรน้ำราดสิงคโปร์ที่ตั้งใจให้มีทั้งความหอม ความกลม และรสที่ไปกับข้าวมันกับเนื้อไก่ได้พอดี</p>
+        <div class="taste-notes"><span><b>01</b> หอม</span><span><b>02</b> กลมกล่อม</span><span><b>03</b> กินง่าย</span></div>
+        <label class="pour-control"><span>ลองราดเพิ่มบนจาน</span><input id="sauceRange" type="range" min="0" max="100" value="38"><b id="sauceValue">38%</b></label>
+        <button class="primary-cta green" data-add="rice-boiled" data-option="special">เอาจานนี้เลย <span>+ ฿60</span></button>
+      </div>
+    </section>
+
+    <section class="story section" id="story">
+      <div class="story-collage">
+        <figure class="story-a"><img src="assets/interior.png" alt="บรรยากาศภายในร้าน" /></figure>
+        <figure class="story-b"><img src="assets/packaging-crop.jpg" alt="บรรจุภัณฑ์และภาชนะของแบรนด์" /></figure>
+        <div class="story-mark"><span>回家</span><strong>กลับบ้าน</strong><small>มากกว่าข้าวมันไก่<br>คือความรู้สึกคุ้นเคย</small></div>
+      </div>
+      <div class="story-copy">
+        <span class="eyebrow">WHY “กลับบ้าน”</span>
+        <h2>ร้านที่อยากให้<br>การกินข้าวเป็นเรื่องง่าย</h2>
+        <p>เราเอาความรู้สึกของร้านข้าวย่านเก่า เก้าอี้แดง ป้ายจีน และครัวเปิด มาผสมกับการนำเสนอที่สะอาดและร่วมสมัย — เพื่อให้ทุกจานเข้าถึงง่าย แต่ยังมีตัวตนชัดเจน</p>
+        <div class="brand-values"><div><strong>หอมข้าว</strong><span>ข้าวมันคือพระเอกครึ่งจาน</span></div><div><strong>นุ่มไก่</strong><span>เนื้อสัมผัสต้องกินง่ายทุกคำ</span></div><div><strong>น้ำราดเด็ด</strong><span>รสจำของแบรนด์</span></div></div>
+      </div>
+    </section>
+
+    <section class="gallery section">
+      <div class="section-head light-head"><div><span class="eyebrow">AT HOME MOOD</span><h2>บรรยากาศที่จำได้</h2></div></div>
+      <div class="gallery-grid">
+        <figure class="g1"><img src="assets/storefront.png" alt="หน้าร้าน" /><figcaption>หน้าร้าน · Green / Red / Cream</figcaption></figure>
+        <figure class="g2"><img src="assets/interior.png" alt="ภายในร้าน" /><figcaption>Kopitiam mood</figcaption></figure>
+        <figure class="g3"><img src="assets/signature-dish.jpg" alt="จานข้าวมันไก่" /><figcaption>Signature plate</figcaption></figure>
+        <figure class="g4"><img src="assets/brandboard.png" alt="ภาพรวมอัตลักษณ์แบรนด์" /><figcaption>Brand world</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="visit section" id="visit">
+      <div class="visit-card">
+        <span class="eyebrow">COME HOME</span>
+        <h2>แวะมากินที่ร้าน<br>หรือสั่งกลับบ้าน</h2>
+        <p>ส่วนตำแหน่งร้าน เวลาเปิด และช่องทางติดต่อสามารถใส่ข้อมูลจริงทีหลังได้ โดยโครง Front End เตรียมไว้แล้ว</p>
+        <div class="visit-actions"><button class="primary-cta" id="openCartBottom">สั่งอาหาร <span>→</span></button><button class="secondary-cta" id="copyMenuLink">คัดลอกลิงก์เมนู</button></div>
+      </div>
+      <div class="visit-tiles"><div><span>OPEN</span><strong>Every day</strong><small>กำหนดเวลาเปิดจริงภายหลัง</small></div><div><span>PICKUP</span><strong>รับที่ร้าน</strong><small>สรุปออเดอร์พร้อมใช้งาน</small></div><div><span>LINE</span><strong>ส่งข้อความสั่ง</strong><small>เชื่อม LINE OA ภายหลังได้</small></div></div>
+    </section>
+  </main>
+
+  <button class="mobile-cart" id="mobileCart"><span>ตะกร้า <b id="cartCountMobile">0</b></span><strong id="cartTotalMobile">฿0</strong></button>
+
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="cart-head"><div><span>YOUR ORDER</span><h2>ออเดอร์กลับบ้าน</h2></div><button id="closeCart">×</button></div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-empty" id="cartEmpty"><span>雞</span><strong>ยังไม่มีรายการ</strong><small>เลือกเมนูที่อยากกิน แล้วเพิ่มลงตะกร้าได้เลย</small></div>
+    <div class="cart-note"><label>หมายเหตุถึงร้าน<textarea id="orderNote" placeholder="เช่น ไม่เอาหนัง / ขอข้าวน้อย"></textarea></label></div>
+    <div class="cart-summary"><div><span>จำนวน</span><b id="summaryQty">0 รายการ</b></div><div class="total-row"><span>รวม</span><strong id="summaryTotal">฿0</strong></div></div>
+    <div class="cart-actions"><button class="copy-order" id="copyOrder">คัดลอกออเดอร์</button><button class="line-order" id="lineOrder">ส่งไป LINE <span>→</span></button></div>
+    <small class="cart-hint">Prototype นี้ยังไม่ส่งเข้าระบบร้านจริง — ปุ่ม LINE จะสร้างข้อความออเดอร์ให้พร้อมส่ง</small>
+  </aside>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js" defer></script>
+</body>
+</html>
